@@ -1,0 +1,19 @@
+.footer {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    max-width: 880px;
+    width: calc(100% - 38px);
+}
+
+@media screen and (max-width: 920px) {
+    .footer {
+        max-width: 581px;
+    }
+}
+
+@media screen and (max-width: 620px) {
+    .footer {
+        max-width: 282px;
+    }
+}

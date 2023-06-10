@@ -1,0 +1,14 @@
+.element__place-name {
+    margin-block-start: 0px;
+    margin-block-end: 0px;
+    margin-top: 25px;
+    margin-bottom: 31px;
+    margin-left: 21px;
+    font-weight: 900;
+    font-size: 24px;
+    line-height: 29px;
+    color: #000000;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden; 
+}

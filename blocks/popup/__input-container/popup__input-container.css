@@ -1,0 +1,23 @@
+.popup__input-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 48px;
+    display: block;
+    margin-inline-start: 36px;
+    margin-inline-end: 36px;
+    padding: 0;
+    padding-block-start: 0;
+    padding-inline-start: 0;
+    padding-inline-end: 0;
+    padding-block-end: 0;
+    border: 0;
+}
+
+@media screen and (max-width: 468px) {
+    .popup__input-container {
+        margin-inline-start: 22px;
+        margin-inline-end: 22px;
+        margin-bottom: 45px;
+    }
+}
