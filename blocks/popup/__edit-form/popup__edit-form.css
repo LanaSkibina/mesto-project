@@ -7,9 +7,8 @@
     border-radius: 10px;
 }
 
-@media screen and (max-width: 468px) {
+@media screen and (max-width: 545px) {
     .popup__edit-form {
         width: 282px;
     }
 }
-

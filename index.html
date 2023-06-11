@@ -31,17 +31,17 @@
                     </div>
                 </article>
                 <article class="element">
-                    <img class="element__image" src="./images/rybinskoye.jpg" alt="Фото Рыбинского озера">
+                    <img class="element__image" src="./images/rybinskoye.jpg" alt="Фото Рыбинского водохранилища">
                     <div class="element__title">
-                        <h2 class="element__place-name">Рыбинское озеро</h2>
-                        <button type="button" class="element__like-button" aria-label="Кнопка оценки фотографии"></button>
+                        <h2 class="element__place-name">Рыбинское водохранилище</h2>
+                        <button type="button" class="element__like-button element__like-button_active" aria-label="Кнопка оценки фотографии"></button>
                     </div>
                 </article>
                 <article class="element">
                     <img class="element__image" src="./images/sopka_kluch.jpg" alt="Фото вулкана Сопка Ключевская">
                     <div class="element__title">
                         <h2 class="element__place-name">Сопка Ключевская</h2>
-                        <button type="button" class="element__like-button" aria-label="Кнопка оценки фотографии"></button>
+                        <button type="button" class="element__like-button element__like-button_active" aria-label="Кнопка оценки фотографии"></button>
                     </div>
                 </article>
                 <article class="element">
@@ -73,13 +73,13 @@
         <div class="popup popup_opened">
             <div class="popup__container">
                 <button type="button" class="popup__close-button" aria-label="Кнопка закрытия окна редактирования профиля"></button>
-                <form class="popup__edit-form">
+                <form class="popup__edit-form" name="edit-form">
                     <h2 class="popup__heading">Редактировать профиль</h2>
                     <fieldset class="popup__input-container">
-                        <input class="popup__title" type="text" placeholder="Жак-Ив Кусто">
-                        <input class="popup__subtitle" type="text" placeholder="Исследователь океана">
+                        <input class="popup__input" type="text" name="name" placeholder="Жак-Ив Кусто">
+                        <input class="popup__input" type="text" name="profession" placeholder="Исследователь океана">
                     </fieldset>
-                    <button class="popup__save-button" aria-label="Кнопка сохранения изменений, внесенных в профиль">Сохранить</button>
+                    <button type="button" class="popup__save-button" aria-label="Кнопка сохранения изменений, внесенных в профиль">Сохранить</button>
                 </form>
             </div>
         </div>

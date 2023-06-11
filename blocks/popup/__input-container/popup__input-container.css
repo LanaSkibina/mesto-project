@@ -14,10 +14,11 @@
     border: 0;
 }
 
-@media screen and (max-width: 468px) {
+@media screen and (max-width: 545px) {
     .popup__input-container {
         margin-inline-start: 22px;
         margin-inline-end: 22px;
         margin-bottom: 45px;
     }
 }
+

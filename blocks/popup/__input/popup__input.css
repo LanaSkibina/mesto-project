@@ -1,4 +1,4 @@
-.popup__title {
+.popup__input {
     min-width: 358px;
     box-sizing: border-box;
     border: 0;
@@ -11,8 +11,13 @@
     margin-bottom: 30px;
 }
 
-@media screen and (max-width: 468px) {
-    .popup__title {
+.popup__input:last-child {
+    margin-bottom: 0;
+}
+
+@media screen and (max-width: 545px) {
+    .popup__input {
         min-width: 238px;
     }
 }
+

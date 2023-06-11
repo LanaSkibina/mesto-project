@@ -2,7 +2,7 @@
     width: 142px;
     height: 33px;
     align-items: flex-start;
-    background-image: url(../../../images/Vector.png);
+    background-image: url(../../../images/logo.svg);
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
@@ -14,7 +14,7 @@
     }
 }
 
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 321px) {
     .header__logo {
         width: 103.74px;
         height: 24.4px;
