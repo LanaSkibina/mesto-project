@@ -3,7 +3,7 @@
     flex-direction: row;
     max-width: 336px;
     justify-content: flex-start;
-    width: 100%;
+    width: 100%; 
 }
 
 @media screen and (max-width: 620px) {
