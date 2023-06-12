@@ -13,7 +13,7 @@
     .profile {
         max-width: 581px;
         margin-top: 42px;
-        margin-bottom: 36px;
+        margin-bottom: 0;
         flex-direction: column;
         justify-content: space-around;
     }
