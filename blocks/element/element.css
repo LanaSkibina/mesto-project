@@ -6,5 +6,6 @@
     flex-direction: column;
     width: 282px;
     overflow: hidden;
+    position: relative;
 }
 

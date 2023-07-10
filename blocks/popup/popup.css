@@ -8,5 +8,7 @@
     height: 100vh;
     background-color: rgb(0, 0, 0, 0.5);
     visibility: hidden; 
-}
+    opacity: 0;
+    transition: visibility .4s, opacity .4s ease-in;
+};
 

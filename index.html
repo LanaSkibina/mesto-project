@@ -23,65 +23,56 @@
                 <button type="button" class="profile__add-button" aria-label="Кнопка добавления новых фотографий"></button>
             </section>
             <section class="elements">
-                <article class="element">
-                    <img class="element__image" src="./images/akkem.jpg" alt="Фото часовни архангела Михаила у Аккемской стены">
-                    <div class="element__title">
-                        <h2 class="element__place-name">Аккемская стена</h2>
-                        <button type="button" class="element__like-button element__like-button_active" aria-label="Кнопка оценки фотографии"></button>
-                    </div>
-                </article>
-                <article class="element">
-                    <img class="element__image" src="./images/rybinskoye.jpg" alt="Фото Рыбинского водохранилища">
-                    <div class="element__title">
-                        <h2 class="element__place-name">Рыбинское водохранилище</h2>
-                        <button type="button" class="element__like-button element__like-button_active" aria-label="Кнопка оценки фотографии"></button>
-                    </div>
-                </article>
-                <article class="element">
-                    <img class="element__image" src="./images/sopka_kluch.jpg" alt="Фото вулкана Сопка Ключевская">
-                    <div class="element__title">
-                        <h2 class="element__place-name">Сопка Ключевская</h2>
-                        <button type="button" class="element__like-button element__like-button_active" aria-label="Кнопка оценки фотографии"></button>
-                    </div>
-                </article>
-                <article class="element">
-                    <img class="element__image" src="./images/yarlu.jpg" alt="Фото долины Ярлу на Алтае">
-                    <div class="element__title">
-                        <h2 class="element__place-name">Долина Ярлу</h2>
-                        <button type="button" class="element__like-button element__like-button_active" aria-label="Кнопка оценки фотографии"></button>
-                    </div>
-                </article>
-                <article class="element">
-                    <img class="element__image" src="./images/seid.jpg" alt="Фото Сейд озера в Карелии">
-                    <div class="element__title">
-                        <h2 class="element__place-name">Сейд озеро</h2>
-                        <button type="button" class="element__like-button" aria-label="Кнопка оценки фотографии"></button>
-                    </div>
-                </article>
-                <article class="element">
-                    <img class="element__image" src="./images/elbrus.jpg" alt="Фото горы Эльбрус на закате">
-                    <div class="element__title">
-                        <h2 class="element__place-name">Эльбрус</h2>
-                        <button type="button" class="element__like-button" aria-label="Кнопка оценки фотографии"></button>
-                    </div>
-                </article>
             </section>
         </main>
         <footer class="footer">
             <p class="footer__copyright">&copy; 2023 Mesto Russia</p>
         </footer>
-        <div class="popup popup_opened">
+        <section class="popup popup__edit-profile">
             <div class="popup__container">
                 <button type="button" class="popup__close-button" aria-label="Кнопка закрытия окна редактирования профиля"></button>
                 <form class="popup__edit-form" name="edit-form">
                     <h2 class="popup__heading">Редактировать профиль</h2>
                     <fieldset class="popup__input-container">
-                        <input class="popup__input" type="text" name="name" placeholder="Жак-Ив Кусто">
-                        <input class="popup__input" type="text" name="profession" placeholder="Исследователь океана">
+                        <input class="popup__input name" type="text" name="name" placeholder="Имя">
+                        <input class="popup__input profession" type="text" name="profession" placeholder="Профессия">
                     </fieldset>
                     <button type="submit" class="popup__save-button" aria-label="Кнопка сохранения изменений, внесенных в профиль">Сохранить</button>
                 </form>
             </div>
-        </div>
+        </section>
+        <section class="popup popup-add">
+            <div class="popup__container">
+                <button type="button" class="popup__close-button popup-add__close-button" aria-label="Кнопка закрытия окна добавления карточки"></button>
+                <form class="popup-add__add-form" name="add-form">
+                    <h2 class="popup__heading popup-add__heading">Новое место</h2>
+                    <fieldset class="popup__input-container popup-add__input-container">
+                        <input class="popup__input popup-add__place-name" type="text" name="place-name" placeholder="Название">
+                        <input class="popup__input popup-add__place-link" type="url" name="place-link" placeholder="Ссылка на картинку">
+                    </fieldset>
+                    <button type="submit" class="popup__save-button popup-add__save-button" aria-label="Кнопка создания карточки">Создать</button>
+                </form>                
+            </div>
+        </section>
+        <section class="popup popup-image">
+            <figure class="popup-image__container">
+                <div class="popup-image__item">
+                    <button class="popup__close-button popup-image__close-button" type="button"></button>
+                    <img src="#" alt="" class="popup-image__img" />
+                    <figcaption class="popup-image__title"></figcaption>
+                </div>
+            </figure>
+        </section>
+        <template id="elements">
+            <div class="element">
+                <img class="element__image" src="#" alt="">
+                <button type="button" class="element__delete-button"></button>
+                <div class="element__title">
+                    <h2 class="element__place-name"></h2>
+                    <button type="button" class="element__like-button" aria-label="Кнопка оценки фотографии"></button>
+                </div>
+            </div>
+        </template>
+        <script src="./scripts/index.js"></script> 
     </body>
 </html>
