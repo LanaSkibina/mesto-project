@@ -26,15 +26,17 @@ function closePopup() {
 closePopupButton.addEventListener('click', closePopup);
 
 
+/*Обработчик «отправки» формы*/
+function formSubmitHandler (evt) {
+    evt.preventDefault();
+};
+
+
 /*Сохранение измененных данных о пользователе */
 saveEditFormButton.addEventListener('click', function () {
     profileTitle.textContent = nameInput.value;
     profileSubtitle.textContent = jobInput.value;
-    
-    /*Обработчик «отправки» формы*/
-    function formSubmitHandler (evt) {
-        evt.preventDefault();
-    };
+        
     popupEditForm.addEventListener('submit', formSubmitHandler);
 
     closePopup();
@@ -122,10 +124,6 @@ function createElement(placeName, placeLink) {
     element.querySelector('.element__image').src = placeLink;
     placesContainer.prepend(element); 
 
-    /*Обработчик «отправки» формы*/
-    function formSubmitHandler (evt) {
-        evt.preventDefault();
-    };
     document.querySelector('.popup-add').addEventListener('submit', formSubmitHandler);
 
     popAddClose();
