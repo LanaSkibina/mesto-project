@@ -4,3 +4,7 @@
     max-height: 75vh;
     object-fit: contain;
 };
+
+.popup-image__img.alt {
+    background-color: white;
+}

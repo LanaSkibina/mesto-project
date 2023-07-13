@@ -66,15 +66,12 @@ function handleProfileFormSubmit (evt) {
     evt.target.reset();
 };
 
-popupEditForm.addEventListener('submit', handleProfileFormSubmit);
-popupAddForm.addEventListener('submit', handleProfileFormSubmit);
-
-
 // Сохранение измененных данных о пользователе 
-saveEditFormButton.addEventListener('click', function () {
-    profileTitle.textContent = nameInput.value;
-    profileSubtitle.textContent = jobInput.value;  
-    closePopup(popupEditProfile);
+popupEditForm.addEventListener('submit', (evt) =>{
+  profileTitle.textContent = nameInput.value;
+  profileSubtitle.textContent = jobInput.value; 
+  handleProfileFormSubmit (evt);
+  closePopup(popupEditProfile);
 });
 
 
@@ -108,10 +105,11 @@ function createCard (pname, link) {
   return card;
 };
 
-createButton.addEventListener('click', function () { 
-  placesContainer.prepend(createCard(popupAddPlaceName.value, popupAddPlaceLink.value));
-  closePopup(popupAdd);
-});
+popupAddForm.addEventListener('submit', (evt) =>{
+  placesContainer.prepend(createCard(popupAddPlaceName.value, popupAddPlaceLink.value)); 
+  handleProfileFormSubmit (evt);
+  closePopup(popupAdd); 
+}); 
 
 
 // Добавление всех карточек "из коробки" перебором массива 
