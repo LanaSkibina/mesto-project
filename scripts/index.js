@@ -66,14 +66,14 @@ function handleProfileFormSubmit (evt) {
     evt.target.reset();
 };
 
+popupEditForm.addEventListener('submit', handleProfileFormSubmit);
+popupAddForm.addEventListener('submit', handleProfileFormSubmit);
+
 
 // Сохранение измененных данных о пользователе 
 saveEditFormButton.addEventListener('click', function () {
     profileTitle.textContent = nameInput.value;
-    profileSubtitle.textContent = jobInput.value;
-        
-    popupEditForm.addEventListener('submit', handleProfileFormSubmit);
-
+    profileSubtitle.textContent = jobInput.value;  
     closePopup(popupEditProfile);
 });
 
@@ -102,6 +102,7 @@ function createCard (pname, link) {
     openPopup(popupImage);
     popupImageImg.src = card.querySelector('.element__image').src;
     popupImageTitle.textContent = card.querySelector('.element__place-name').textContent;
+    popupImageImg.alt = card.querySelector('.element__place-name').textContent;
   });
   
   return card;
@@ -109,7 +110,6 @@ function createCard (pname, link) {
 
 createButton.addEventListener('click', function () { 
   placesContainer.prepend(createCard(popupAddPlaceName.value, popupAddPlaceLink.value));
-  popupAddForm.addEventListener('submit', handleProfileFormSubmit);
   closePopup(popupAdd);
 });
 
@@ -156,6 +156,6 @@ const initialCards = [
  
 
 initialCards.forEach(function(item) {
-  item = createCard(item.name, item.link);
-  placesContainer.prepend(item);
+  placesContainer.prepend(createCard(item.name, item.link))
 });
+
